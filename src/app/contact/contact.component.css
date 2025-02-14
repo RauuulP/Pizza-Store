@@ -1,0 +1,126 @@
+.contact {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h2 {
+  font-family: var(--font-cursive);
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2::after {
+  content: "";
+  display: inline-block;
+  margin-left: 25px;
+  width: 150px;
+  height: 30px;
+  background: conic-gradient(
+    transparent 90deg,
+    var(--primary) 90deg 180deg,
+    transparent 180deg 270deg,
+    var(--primary) 270deg
+  );
+  background-repeat: repeat;
+  background-size: 30px 30px;
+  background-position: top left;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group placeholder {
+  color: var(--secondary);
+}
+
+.form-group label {
+  font-family: var(--font-cursive);
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--secondary);
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 500px;
+  padding: 12px;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: var(--font);
+  background: white;
+  transition: border 0.2s ease-in-out;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--secondary);
+  opacity: 1;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border: 1px solid var(--secondary);
+  outline: none;
+}
+
+.error-input {
+  border: 1px solid var(--primary) !important;
+  color: var(--primary);
+}
+
+.error-input::placeholder {
+  color: var(--primary) !important;
+  opacity: 1;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 150px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.success-message {
+  text-align: center;
+  padding: 20px;
+  color: var(--secondary);
+}
+
+.success-message h3 {
+  padding: 20px;
+  font-family: var(--font-cursive);
+  font-size: 24px;
+}
+
+.success-message p {
+  padding: 20px;
+  font-size: 18px;
+  font-family: var(--font-cursive);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    width: 90%;
+  }
+}

@@ -1,0 +1,7 @@
+1. Navigate to your server directory: C:\Users\raul.pacurar\OneDrive - ACCESA\Desktop\util\Learning\Angular Applications\Padre-Ginos\server
+
+2. Install Dependencies (if not installed yet) : npm install
+
+3. Start the server: npm start
+
+4. Test the server (optional): http://localhost:5000/pizzas

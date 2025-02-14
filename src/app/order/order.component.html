@@ -1,0 +1,103 @@
+<div class="order-page">
+  <div class="order-section">
+    <div class="order">
+      <h2>Create Order</h2>
+      <div class="order-form">
+        <form (ngSubmit)="addToCart()">
+          <div>
+            <!-- Pizza Type Selection -->
+            <div>
+              <label for="pizza-type">Pizza Type</label>
+              <select
+                name="pizza-type"
+                [(ngModel)]="selectedPizzaId"
+                (ngModelChange)="onPizzaChange($event)"
+                required
+              >
+                @for (pizza of pizzas(); track pizza.id) {
+                <option [value]="pizza.id">{{ pizza.name }}</option>
+                }
+              </select>
+            </div>
+
+            <!-- Pizza Size Selection -->
+            <div>
+              <label for="pizza-size">Pizza Size</label>
+              <div>
+                <span>
+                  <input
+                    type="radio"
+                    name="pizza-size"
+                    id="pizza-s"
+                    value="S"
+                    [checked]="pizzaSize() === 'S'"
+                    (change)="pizzaSize.set('S')"
+                  />
+                  <label for="pizza-s">Small</label>
+                </span>
+                <span>
+                  <input
+                    type="radio"
+                    name="pizza-size"
+                    id="pizza-m"
+                    value="M"
+                    [checked]="pizzaSize() === 'M'"
+                    (change)="pizzaSize.set('M')"
+                  />
+                  <label for="pizza-m">Medium</label>
+                </span>
+                <span>
+                  <input
+                    type="radio"
+                    name="pizza-size"
+                    id="pizza-l"
+                    value="L"
+                    [checked]="pizzaSize() === 'L'"
+                    (change)="pizzaSize.set('L')"
+                  />
+                  <label for="pizza-l">Large</label>
+                </span>
+              </div>
+            </div>
+
+            <button class="btn" type="submit">Add to Cart</button>
+          </div>
+        </form>
+
+        <div class="order-pizza">
+          @if (selectedPizza()) {
+          <div class="pizza">
+            <h1>{{ selectedPizza()!.name }}</h1>
+            <p>{{ selectedPizza()!.description }}</p>
+            <img
+              [src]="selectedPizza()!.image"
+              alt="{{ selectedPizza()!.name }}"
+            />
+          </div>
+          <p>${{ selectedPizza()!.sizes[pizzaSize()] }}</p>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cart Section -->
+  <div class="cart">
+    <h2>Cart</h2>
+    @if (cartService.getCartItems()().length > 0) {
+    <ul>
+      @for (index of cartService.getCartItems()(); track index; let idx = $index) {
+      <li class="cart-item">
+        <span>
+          {{ index.name }} - {{ index.size }} - ${{ index.price | number : "1.2-2" }}
+        </span>
+        <mat-icon class="delete" (click)="deleteItem(index.id, idx)" >delete</mat-icon>
+      </li>
+      }
+    </ul>
+    <p>Total: ${{ cartService.getTotal() | number : "1.2-2" }}</p>
+    <button class="btn" (click)="checkout()">Checkout</button>
+    } @else {
+    <p>Your cart is empty!</p>
+    }
+  </div>
+</div>

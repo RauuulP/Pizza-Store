@@ -1,0 +1,51 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.header-container img {
+  width: 220px;
+  height: auto;
+}
+
+.cart-container {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.cart-container:hover {
+  cursor: pointer;
+}
+
+.cart-container mat-icon {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.cart-items {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: var(--primary); 
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.wrapper {
+  width: 100%;
+  border-top: 1px solid #ccc;
+}

@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #da2f04;
+  --secondary: #33670a;
+  --background: #fffaee;
+  --font-family: "Roboto", "Helvetica Neue", sans-serif;
+  --font-cursive: "Pacifico", cursive, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-cursive);
+  background-color: var(--background);
+}
+
+.btn {
+  padding: 12px;
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+  font-family: var(--font-cursive);
+  font-size: 1.8em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+

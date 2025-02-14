@@ -1,0 +1,33 @@
+<div class="past-orders-modal">
+  <h2>Order #{{ order.id }}</h2>
+  <table class="order-table">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Size</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(item of order.items; track idx; let idx = $index){
+      <tr>
+        <td>
+          <img
+            [src]="item.pizzaImage"
+            alt="{{ item.pizzaName }}"
+            class="order-img"
+          />
+        </td>
+        <td>{{ item.pizzaName }}</td>
+        <td>{{ item.size }}</td>
+        <td>${{ item.price }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+  <div class="total">
+    <p>Total: ${{ order.total }}</p>
+  </div>
+  <button class="close-button" (click)="closeModal()">Close</button>
+</div>

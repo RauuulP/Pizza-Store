@@ -1,0 +1,12 @@
+<div class="header-container">
+  <a [routerLink]="['/']" style="cursor: pointer;">
+    <img src="assets/padre_gino.svg" alt="Padre Gino's"
+    />
+  </a>
+  
+  <div class="cart-container" (click)="viewCart()">
+    <mat-icon>shopping_cart</mat-icon>
+    <span class="cart-items"> {{ cartItemCount() }} </span>
+  </div>
+</div>
+<div class="wrapper"></div>

@@ -1,0 +1,29 @@
+    <div class="cart-modal">
+
+    <mat-icon class="close-button" (click)="closeModal()">close</mat-icon>
+
+      @if (cartService.getCartItems()().length > 0) {
+        <ul class="cart-items-list">
+          @for (item of cartService.getCartItems()(); track item.id; let index = $index) {
+            <li class="cart-item">
+              <span>
+                <mat-icon class="delete" (click)="deleteItem(item.id, index)" >delete</mat-icon>
+              </span>
+              <div class="item-info">
+                <span class="item-name">{{ item.name }} - {{ item.size }} </span>
+              </div>
+              <span class="item-price">${{ item.price }}</span>
+            </li>
+          }
+        </ul>
+    
+        <div class="cart-total">
+          <p>Total: ${{ cartService.getTotal()}}</p>
+        </div>
+    
+        <button class="btn checkout" (click)="checkout()">Checkout</button>
+      } @else {
+        <p class="empty-cart-message">Your cart is empty!</p>
+      }
+    </div>
+    

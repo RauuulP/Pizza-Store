@@ -1,0 +1,91 @@
+<div class="contact">
+  <h2>Contact</h2>
+
+  @if(formSuccess){
+  <div class="success-message">
+    <h3>Thank you for reaching out!</h3>
+    <p>The form is submitted and we'll get back to you as soon as possible.</p>
+  </div>
+  } @else {
+  <form
+    class="contact-form"
+    #contactForm="ngForm"
+    (ngSubmit)="onSubmit(contactForm)"
+    method="post"
+  >
+    <div class="form-group">
+      <label for="name"></label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        [(ngModel)]="name"
+        placeholder="Name"
+        required
+        minlength="2"
+        #nameInput="ngModel"
+        [ngClass]="{ 'error-input': formSubmitted && nameInput.invalid }"
+      />
+      @if(formSubmitted && nameInput.invalid){
+      <div class="error">
+        @if(nameInput.errors?.['required']){
+        <small>Name is required.</small>
+        } @if(nameInput.errors?.['minlength']){
+        <small>Name must be at least 2 characters long.</small>
+        }
+      </div>
+      }
+    </div>
+
+    <div class="form-group">
+      <label for="email"></label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        [(ngModel)]="email"
+        placeholder="Email"
+        required
+        email
+        #emailInput="ngModel"
+        [ngClass]="{ 'error-input': formSubmitted && emailInput.invalid }"
+      />
+      @if(formSubmitted && emailInput.invalid){
+      <div class="error">
+        @if(emailInput.errors?.['required']){
+        <small>The email is required.</small>
+        } @if(emailInput.errors?.['email']){
+        <small>Enter a valid email.</small>
+        }
+      </div>
+      }
+    </div>
+
+    <div class="form-group">
+      <label for="message"></label>
+      <textarea
+        id="message"
+        name="message"
+        [(ngModel)]="message"
+        rows="4"
+        placeholder="Message"
+        required
+        minlength="5"
+        #messageInput="ngModel"
+        [ngClass]="{ 'error-input': formSubmitted && messageInput.invalid }"
+      ></textarea>
+      @if(formSubmitted && messageInput.invalid){
+      <div class="error">
+        @if(messageInput.errors?.['required']){
+        <small>Please share your experience.</small>
+        } @if(messageInput.errors?.['minlength']){
+        <small>Message must be at least 5 characters long.</small>
+        }
+      </div>
+      }
+    </div>
+
+    <button class="btn submit" type="submit">Submit</button>
+  </form>
+  }
+</div>

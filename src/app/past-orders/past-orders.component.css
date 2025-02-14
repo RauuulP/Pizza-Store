@@ -1,0 +1,70 @@
+.past-orders {
+  min-height: 650px;
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: var(--font-cursive);
+  min-width: 400px;
+  border: 1px solid #ccc;
+}
+
+thead tr {
+  background-color: var(--secondary);
+  color: #ffffff;
+  text-align: left;
+}
+
+thead tr td {
+  font-size: 1.2rem;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+
+tbody tr {
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f2ede2;
+}
+
+button {
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+  font-family: var(--font);
+  font-size: 20px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.order-item {
+  font-size: 1rem;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 50px;
+  font-family: var(--font-cursive);
+}
+
+.pages > span {
+  color: var(--primary);
+  font-size: 1.5rem;
+  padding: 10px;
+}

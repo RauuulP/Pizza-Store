@@ -1,0 +1,30 @@
+<div class="past-orders">
+  <table>
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Date</td>
+        <td>Time</td>
+      </tr>
+    </thead>
+    <tbody>
+      @for(order of pagedOrders; track order.id){
+      <tr class="order-item">
+        <td>
+          <button (click)="vieworder(order)">{{ order.id }}</button>
+        </td>
+        <td>{{ order.date | date : "dd-MM-yyyy" }}</td>
+        <td>{{ order.date | date : "HH:mm:ss" }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+
+  <div class="pages">
+    <button (click)="previousPage()" [disabled]="!previousPageAvailable">
+      Previous
+    </button>
+    <span> {{ currentPage }} / {{ totalPages }} </span>
+    <button (click)="nextPage()" [disabled]="!nextPageAvailable">Next</button>
+  </div>
+</div>
