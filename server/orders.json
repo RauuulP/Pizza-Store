@@ -661,5 +661,505 @@
       }
     ],
     "total": 32.75
+  },
+  {
+    "id": 37,
+    "date": "2025-02-14T14:38:31.726Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "cali_ckn",
+        "size": "L",
+        "price": 20.75
+      },
+      {
+        "pizzaId": "big_meat",
+        "size": "S",
+        "price": 12
+      }
+    ],
+    "total": 48.75
+  },
+  {
+    "id": 38,
+    "date": "2025-02-14T14:40:13.183Z",
+    "items": [
+      {
+        "pizzaId": "big_meat",
+        "size": "S",
+        "price": 12
+      }
+    ],
+    "total": 12
+  },
+  {
+    "id": 39,
+    "date": "2025-02-14T14:45:02.966Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      }
+    ],
+    "total": 48
+  },
+  {
+    "id": 40,
+    "date": "2025-02-14T14:46:16.699Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "S",
+        "price": 12
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "S",
+        "price": 12
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "S",
+        "price": 12
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "S",
+        "price": 12
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "S",
+        "price": 12
+      }
+    ],
+    "total": 60
+  },
+  {
+    "id": 41,
+    "date": "2025-02-14T14:47:01.875Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "S",
+        "price": 12
+      }
+    ],
+    "total": 12
+  },
+  {
+    "id": 42,
+    "date": "2025-02-14T14:49:22.411Z",
+    "items": [
+      {
+        "pizzaId": "classic_dlx",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "classic_dlx",
+        "size": "M",
+        "price": 16
+      }
+    ],
+    "total": 32
+  },
+  {
+    "id": 43,
+    "date": "2025-02-14T14:57:35.965Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "S",
+        "price": 12
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "S",
+        "price": 12
+      }
+    ],
+    "total": 24
+  },
+  {
+    "id": 44,
+    "date": "2025-02-14T14:58:36.506Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      }
+    ],
+    "total": 64
+  },
+  {
+    "id": 45,
+    "date": "2025-02-14T15:00:08.738Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      }
+    ],
+    "total": 16
+  },
+  {
+    "id": 46,
+    "date": "2025-02-14T15:00:53.040Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      }
+    ],
+    "total": 16
+  },
+  {
+    "id": 47,
+    "date": "2025-02-14T15:02:51.223Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      }
+    ],
+    "total": 16
+  },
+  {
+    "id": 48,
+    "date": "2025-02-14T15:03:48.965Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      }
+    ],
+    "total": 48
+  },
+  {
+    "id": 49,
+    "date": "2025-02-14T15:04:43.153Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "L",
+        "price": 20.5
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "L",
+        "price": 20.5
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "L",
+        "price": 20.5
+      }
+    ],
+    "total": 61.5
+  },
+  {
+    "id": 50,
+    "date": "2025-02-14T15:05:22.569Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      }
+    ],
+    "total": 16
+  },
+  {
+    "id": 51,
+    "date": "2025-02-14T15:05:44.821Z",
+    "items": [
+      {
+        "pizzaId": "ckn_alfredo",
+        "size": "M",
+        "price": 16.75
+      }
+    ],
+    "total": 16.75
+  },
+  {
+    "id": 52,
+    "date": "2025-02-14T15:09:37.259Z",
+    "items": [
+      {
+        "pizzaId": "hawaiian",
+        "size": "M",
+        "price": 13.25
+      },
+      {
+        "pizzaId": "hawaiian",
+        "size": "M",
+        "price": 13.25
+      },
+      {
+        "pizzaId": "hawaiian",
+        "size": "M",
+        "price": 13.25
+      }
+    ],
+    "total": 39.75
+  },
+  {
+    "id": 53,
+    "date": "2025-02-14T15:11:10.320Z",
+    "items": [
+      {
+        "pizzaId": "ckn_pesto",
+        "size": "M",
+        "price": 16.75
+      }
+    ],
+    "total": 16.75
+  },
+  {
+    "id": 54,
+    "date": "2025-02-14T15:11:44.119Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "L",
+        "price": 20.5
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "L",
+        "price": 20.5
+      }
+    ],
+    "total": 57
+  },
+  {
+    "id": 55,
+    "date": "2025-02-14T15:12:58.351Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "S",
+        "price": 12
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "S",
+        "price": 12
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "S",
+        "price": 12
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "S",
+        "price": 12
+      }
+    ],
+    "total": 48
+  },
+  {
+    "id": 56,
+    "date": "2025-02-14T15:13:31.991Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      }
+    ],
+    "total": 48
+  },
+  {
+    "id": 57,
+    "date": "2025-02-14T15:13:43.208Z",
+    "items": [
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      },
+      {
+        "pizzaId": "the_greek",
+        "size": "M",
+        "price": 16
+      }
+    ],
+    "total": 112
+  },
+  {
+    "id": 58,
+    "date": "2025-02-14T15:17:10.026Z",
+    "items": [
+      {
+        "pizzaId": "thai_ckn",
+        "size": "S",
+        "price": 12.75
+      },
+      {
+        "pizzaId": "thai_ckn",
+        "size": "S",
+        "price": 12.75
+      }
+    ],
+    "total": 25.5
+  },
+  {
+    "id": 59,
+    "date": "2025-02-14T15:17:27.315Z",
+    "items": [
+      {
+        "pizzaId": "ital_cpcllo",
+        "size": "L",
+        "price": 20.5
+      },
+      {
+        "pizzaId": "ital_cpcllo",
+        "size": "L",
+        "price": 20.5
+      },
+      {
+        "pizzaId": "ital_cpcllo",
+        "size": "L",
+        "price": 20.5
+      }
+    ],
+    "total": 61.5
+  },
+  {
+    "id": 60,
+    "date": "2025-02-14T15:18:15.343Z",
+    "items": [
+      {
+        "pizzaId": "classic_dlx",
+        "size": "L",
+        "price": 20.5
+      },
+      {
+        "pizzaId": "classic_dlx",
+        "size": "S",
+        "price": 12
+      },
+      {
+        "pizzaId": "classic_dlx",
+        "size": "S",
+        "price": 12
+      },
+      {
+        "pizzaId": "classic_dlx",
+        "size": "S",
+        "price": 12
+      }
+    ],
+    "total": 56.5
+  },
+  {
+    "id": 61,
+    "date": "2025-02-14T15:24:23.108Z",
+    "items": [
+      {
+        "pizzaId": "ital_supr",
+        "size": "L",
+        "price": 20.75
+      },
+      {
+        "pizzaId": "ital_supr",
+        "size": "L",
+        "price": 20.75
+      },
+      {
+        "pizzaId": "ital_supr",
+        "size": "L",
+        "price": 20.75
+      }
+    ],
+    "total": 62.25
   }
 ]

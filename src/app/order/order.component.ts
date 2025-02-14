@@ -22,6 +22,7 @@ export class OrderComponent implements OnInit {
   cart: WritableSignal<(Pizza & { size: 'S' | 'M' | 'L'; price: number })[]> =
     signal([]);
   total = signal<number>(0);
+  successMessage = signal<string | null>(null);
 
   constructor(
     private pizzaService: PizzaService,
@@ -79,12 +80,15 @@ export class OrderComponent implements OnInit {
     }
   }
 
-  deleteItem(pizzaId: string, index: number){
-    this.cartService.deletePizza(pizzaId, index)
+  deleteItem(pizzaId: string, index: number) {
+    this.cartService.deletePizza(pizzaId, index);
   }
 
   checkout() {
-    this.orderService.placeOrder()
-    alert('Checkout complete!');
+    this.orderService.placeOrder();
+    this.successMessage.set('Success');
+    setTimeout(() => {
+      this.successMessage.set(null);
+    }, 3000);
   }
 }

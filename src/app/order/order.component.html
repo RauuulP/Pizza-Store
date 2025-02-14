@@ -83,21 +83,34 @@
   <!-- Cart Section -->
   <div class="cart">
     <h2>Cart</h2>
+
+    @if(successMessage()){
+    <div class="success-message">
+      <h3>Thank you for your order!</h3>
+      <p>Don't worry, we carrefully prepare it for you to enjoy it 😋</p>
+    </div>
+    } 
+    @if(cartService.getCartItems()().length === 0 && !successMessage()){
+    <p>Your cart is empty!</p>
+    } 
     @if (cartService.getCartItems()().length > 0) {
     <ul>
-      @for (index of cartService.getCartItems()(); track index; let idx = $index) {
+      @for (index of cartService.getCartItems()(); track index; let idx =
+      $index) {
       <li class="cart-item">
         <span>
-          {{ index.name }} - {{ index.size }} - ${{ index.price | number : "1.2-2" }}
+          {{ index.name }} - {{ index.size }} - ${{
+            index.price | number : "1.2-2"
+          }}
         </span>
-        <mat-icon class="delete" (click)="deleteItem(index.id, idx)" >delete</mat-icon>
+        <mat-icon class="delete" (click)="deleteItem(index.id, idx)"
+          >delete</mat-icon
+        >
       </li>
       }
     </ul>
     <p>Total: ${{ cartService.getTotal() | number : "1.2-2" }}</p>
     <button class="btn" (click)="checkout()">Checkout</button>
-    } @else {
-    <p>Your cart is empty!</p>
     }
   </div>
 </div>
